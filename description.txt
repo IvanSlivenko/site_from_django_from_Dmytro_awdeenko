@@ -1,0 +1,56 @@
+1
+створюємо віртуальне середовище
+python -m venv venv
+
+2
+Активуємо віртуальне середовище
+venv\Scripts\activate
+
+3
+pip install django
+
+4
+створюємо проект джанго
+django-admin startproject taskmanager
+
+5
+Створюємо конфігурацію для запуска сервера django
+images/edit_configurations.png
+
+6
+models.py
+
+7
+admin.py
+from django.contrib import admin
+from .models import Food, Consume
+
+admin.site.register(Food)
+admin.site.register(Consume)
+
+8
+create migrations
+python manage.py makemigrations
+
+
+
+9
+perform migrations
+python manage.py migrate
+
+10
+python manage.py createsuperuser
+
+user = admin
+password = admin
+
+email = umanproger@ukr.net
+
+
+
+-------------------------------------------
+https://youtu.be/ynHiC9w4lp4
+
+34 : 25
+
+-------------------------------------------
